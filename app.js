@@ -15,7 +15,6 @@
 			description : 'A nice game-trap story in a MMORPG',
 			type: 'Fantasy',
 			added: '',
-
 		},
 		{
 			name: 'Nanatsu no Taizai',

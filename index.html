@@ -4,18 +4,36 @@
   <meta charset="utf-8">
   <title>Fuzzy-Happiness</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <script type="text/javascript" src="app.js"></script>
 </head>
 <body ng-controller="ListController as list">
-	<div ng-repeat="element in list.elements">
-		<h1>Title : {{element.name}}</h1>
-		<h2>Nombres d'episodes : {{element.episodes}}</h2>
-		<h2>Nombres de saison : {{element.season}}</h2>
-		<h2>Description : {{element.description}}</h2>
-		<h3>Type : {{element.type}}</h3>
-		<h3>Date d'ajout : {{element.added}}</h3>
-		<p>--------------------------------------------------</p>
+
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="col-lg-8 col-lg-offset-2">
+				<div class="box text-center" ng-repeat="element in list.elements">
+					<h1>Titre : {{element.name}}</h1>
+					<h2>Nombres d'episodes : {{element.episodes}}</h2>
+					<h2>Nombres de saison : {{element.season}}</h2>
+					<h2>Description : {{element.description}}</h2>
+					<h3>Type : {{element.type}}</h3>
+					<h3>Date d'ajout : {{element.added}}</h3>
+					
+					<section class="box text-center">
+						<ul class="nav nav-pills">
+							<li class="col-lg-7 col-lg-offset-6">
+								<a href="">Episodes</a>
+							</li>
+							<li class="col-lg-3">
+								<a href="">Information</a>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
